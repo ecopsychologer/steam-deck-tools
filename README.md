@@ -5,4 +5,4 @@
 
 
 ### Full Setup
-`sudo steamos-readonly disable && sudo pacman-key --init && sudo pacman-key --populate archlinux && sudo pacman -Syu tmux htop wget git ncdu podman fakeroot yay-git base-devel mlocate cmake gcc $(pacman -Qk 2>/dev/null | grep -ve ' 0 missing' | awk -F ':' '{print $1}') --overwrite '*'`
+`sudo steamos-readonly disable && sudo pacman-key --init && sudo pacman-key --populate archlinux && sudo pacman -Syu tmux htop wget git base-devel cmake gcc $(pacman -Qk 2>/dev/null | grep -ve ' 0 missing' | awk -F ':' '{print $1}') --overwrite '*'`
